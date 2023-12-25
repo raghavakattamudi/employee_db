@@ -16,3 +16,7 @@ name: SQL for GitHub Actions
                 client-id: ${{ secrets.AZURE_CLIENT_ID }}
                 tenant-id: ${{ secrets.AZURE_TENANT_ID }}
                 subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+            # Azure logout 
+             - name: logout
+               run: |
+                 az logout
